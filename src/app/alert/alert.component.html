@@ -1,0 +1,6 @@
+<div class="alert-message alert alert-success" role="alert" *ngIf="showAlert.type && showAlert.type === 'success'">
+  <a href="#" class="alert-link">{{showAlert.message}}</a>
+</div>
+<div class="alert-message alert alert-danger" role="alert" *ngIf="showAlert.type && showAlert.type === 'error'">
+  <a href="#" class="alert-link"> {{showAlert.message}}</a>
+</div>

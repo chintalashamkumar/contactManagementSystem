@@ -1,0 +1,27 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="addContacts">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Contact Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="name" placeholder="Enter Contact Name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">Contact Number</label>
+      <input type="text" class="form-control" id="exampleInputEmail2" formControlName="phoneNum" placeholder="Enter Contact Number">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail3">Contact Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail3" formControlName="email" placeholder="Enter Contact Email">
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-success " (click)="create()">Create</button>
+  <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">cancel</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Group Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  [(ngModel)]="groupName" placeholder="Enter Group Name">
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-success " (click)="create()">Create</button>
+  <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">cancel</button>
+</div>
